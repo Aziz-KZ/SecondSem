@@ -7,11 +7,9 @@ def pl(t):
 x = int(input("Введите количество строк: "))
 y = int(input("Введите количество столбцов: "))
 
-# Генерация двух матриц со случайными числами
 matrix_1 = [[random.randint(-100, 100) for _ in range(y)] for _ in range(x)]
 matrix_2 = [[random.randint(-100, 100) for _ in range(y)] for _ in range(x)]
 
-# Сложение двух матриц
 matrix_3 = [[matrix_1[i][j] + matrix_2[i][j] for j in range(y)] for i in range(x)]
 
 print("Первая матрица:")
